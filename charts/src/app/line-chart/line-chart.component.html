@@ -1,0 +1,22 @@
+<!-- <button mat-button mat-raised-button color="primary" (click)="pushOne()">Push</button> -->
+<div style="display: block;">
+  <canvas baseChart
+    [datasets]="lineChartData"
+    [labels]="lineChartLabels"
+    [colors]="lineChartColors"
+    (chartClick)="chartClicked($event)"
+    [chartType]="lineChartType"
+    [plugins]="lineChartPlugins">
+  </canvas>
+</div>
+
+<div style="display: block;">
+  <canvas baseChart
+    [datasets]="lineChartData2"
+    [labels]="lineChartLabels"
+    [colors]="lineChartColors2"
+    (chartClick)="chartClicked($event)"
+    [chartType]="lineChartType"
+    [plugins]="lineChartPlugins">
+  </canvas>
+</div>
